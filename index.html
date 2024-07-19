@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pass with QR Code</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .pass-container {
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+    }
+    
+    .qr-code {
+        max-width: 15em;
+    }
+    
+    .pass-container:hover .qr-code img {
+      display: block;
+    }
+    
+    .details p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="pass-container row">
+      <div class="details col-md-6">
+        <h4>Event Pass</h4>
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>College:</strong> ABC University</p>
+        <p><strong>Event:</strong> Tech Conference 2024</p>
+        <p><strong>Date:</strong> July 25, 2024</p>
+        <p><strong>Venue:</strong> Grand Hall, XYZ Convention Center</p>
+      </div>
+      <div class="qr-code col-md-6 mx-auto">
+        <img src="qr.png" class="img-fluid" alt="QR Code">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
